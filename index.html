@@ -1,0 +1,168 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Mobile Web App</title>
+<link href="jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<style>
+#principal{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background-color:#0FF;
+	background-image:url(Fondo/fondo8.jpg);
+}
+#pantalla{
+	float:left;
+	width:100%;
+	height:25%;
+	background:#3FF;
+	text-align:center;
+	font-size: 4em;
+	font-weight: bold;
+	font-family:Snap ITC;
+}
+#teclado{
+	float:left;
+	width:100%;
+	height: 75%;
+}
+.nota{
+	position:relative;
+	float:left;
+	height: 90%;
+	margin-top:30px;
+	background-image:url(Fondo/fondo8.jpg);
+	width:50%;
+}
+.textonota{
+	position:relative;
+	top:80%;
+	text-align:center;
+	font-size:2em;
+	font-weight: bold;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color:#00F;
+}
+.tocada{
+	color:#300;
+	background:#F00;
+	outline:solid 1px #FF0000;
+}
+.tipo1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	color: #0FF;
+}
+.nombre {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: bold;
+	color: #0F3;
+}
+.titulos {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 36px;
+	font-style: italic;
+	font-weight: bold;
+	color: #9F0;
+}
+</style>
+</head> 
+<body> 
+
+<div data-role="page" id="page" data-theme="h">
+	<div data-role="header" style="background:url(Fondo/fondo9.jpg)">
+		<h1><div class="titulos">Los Animales</h1>
+	</div>
+	<div data-role="content" style="background:url(Fondo/fondo1.jpg)">	
+		<ul data-role="listview">
+        <div align="center"><div class="nombre">Selecciona un Tipo</div>
+        <div align="center" data-role="controlgroup" data-type="vertical">
+             <div style="width 50%">
+			<a href="#page2" data-role="button">
+            Animales Domesticos
+            </a>
+            </div>
+            </div>
+             <div align="center" data-role="controlgroup" data-type="vertical">
+             <div style="width:50%">
+            <li><a href="#page3">
+            <a href="#page3" data-role="button">
+            Animales Salvajes
+            </a></li> 	
+		</ul>		
+	</div>
+	<div data-role="footer">
+	  <h4><div class="tipo1">Elias Amador Vazquez</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2" data-add-back-btn="true" data-back-btn-theme="e" data-back-btn-text="Salir">
+<div id="principal">
+   <div data-role="header" id="pantalla">
+    Animales Domesticos
+    </div>
+    <div id= "teclado">
+    <div id= "abeja" class="nota">
+	<div align="center"><img src="Animales Domesticos/abeja.jpg" width="80%" height="300px" alt="abeja" longdesc="Animales Domesticos/abeja.jpg"></div></div>
+    
+    <div id= "caballo" class="nota">
+    <div align="center"><img src="Animales Domesticos/caballo.png" alt="caballo" width="80%" height="300px" longdesc="Animales Domesticos/caballo.png"></div></div>
+    
+    <div id= "cerdo" class="nota">
+    <div align="center"><img src="Animales Domesticos/borrego.png" width="80%" height="300px" alt="borrego" longdesc="Animales Domesticos/borrego.png"></div></div>
+    
+    <div id="gallo" class="nota">
+    <div align="center"><img src="Animales Domesticos/gallo.jpg" width="80%" height="300px" alt="gallo" longdesc="Animales Domesticos/gallo.jpg"></div></div>
+    
+    <div id="perro" class="nota">
+    <div align="center"><img src="Animales Domesticos/perro.jpg" width="80%" height="300px" alt="perro" longdesc="Animales Domesticos/perro.jpg"></div></div>
+    
+    <div id="raton" class="nota">
+    <div align="center"><img src="Animales Domesticos/raton.jpg" width="80%" height="300px" alt="raton" longdesc="Animales Domesticos/raton.jpg"></div></div>
+    
+	<div data-role="footer">
+	  <h4><div class="tipo1">Elias Amador Vazquez</h4>
+	</div>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="page3" data-add-back-btn="true" data-back-btn-theme="e" data-back-btn-text="Salir">
+<div id="principal">
+   <div data-role="header" id="pantalla">
+		Animales Salvajes
+	</div>
+    <div id="teclado">
+    <div id="tigre" class="nota">
+   		 <div align="center"><img src="Animales Salvajes/tigre.jpg" width="80%" height="300px" alt="tigre" longdesc="Animales Salvajes/tigre.jpg"></div></div>
+    
+    <div id="leon" class="nota">
+    <div align="center"><img src="Animales Salvajes/leon.jpg" width="80%" height="300px" alt="leon" longdesc="Animales Salvajes/leon.jpg"></div></div>
+    
+    <div id="elefante" class="nota">
+    <div align="center"><img src="Animales Salvajes/elefante.jpg" width="80%" height="300px" alt="elefante" longdesc="Animales Salvajes/elefante.jpg"></div></div>
+    
+    <div id="dinosaurio" class="nota">
+    <div align="center"><img src="Animales Salvajes/dinosaurio.jpg" width="80%" height="300px" alt="dinosaurio" longdesc="Animales Salvajes/dinosaurio.jpg"></div></div>
+    
+    <div id="gorila" class="nota">
+    <div align="center"><img src="Animales Salvajes/gorila.jpg" width="80%" height="300px" alt="gorila" longdesc="Animales Salvajes/gorila.jpg"></div></div>
+    
+    <div id="pantera" class="nota">
+    <div align="center"><img src="Animales Salvajes/pantera.jpg" width="80%" height="300px" alt="pantera" longdesc="Animales Salvajes/pantera.jpg"></div></div>
+    
+    
+	<div data-role="footer">
+		<h4><div class="tipo1">Elias Amador Vazquez</h4>
+</div>
+</div>
+</body>
+</html>
